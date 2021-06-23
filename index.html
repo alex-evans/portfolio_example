@@ -7,6 +7,7 @@
     <title>Learning bootstrap v5 with sass</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -78,7 +79,7 @@
                 <div class="col-md-6 intros text-end">
                     <div class="video-box">
                         <img src="images/arts/intro-section-illustration.png" alt="video illustration" class="img-fluid">
-                        <a href="#" class="position-absolute top-50 start-50 translate-middle">
+                        <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
                             <span>
                                 <i class="fas fa-play-circle"></i>
                             </span>
@@ -92,7 +93,16 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,218.7C384,213,480,139,576,138.7C672,139,768,213,864,250.7C960,288,1056,288,1152,250.7C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
 
-
+    <script src="assets/vendors/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            'href': 'https://www.youtube.com/watch?v=iJKCj8uAHz8&t=7018s',
+            'type': 'video',
+            'source': 'youtube',
+            'width': 900,
+            'autoPlayVideos': 'true'
+        });
+    </script>
     <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>
